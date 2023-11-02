@@ -4,6 +4,7 @@ class Solution {
             if(original == nums[i]){
                 original=original*2;
                 i=-1;
+                // if we not consider i=-1 then we donot find the element which is present in the array at stating ondex after increment of i vaule
             }
             
         }
