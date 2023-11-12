@@ -1,1 +1,1 @@
-<h2>find-peak-element Notes</h2><hr>its very imp. when you are making 
+<h2>find-peak-element Notes</h2><hr>its very imp. when you are making ed
