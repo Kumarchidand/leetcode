@@ -7,7 +7,7 @@ class MyQueue {
         helper=new Stack<>();
     }
     // main.st --> helper.st
-    // helper.st add (ele)
+    // main.st add (ele)
     // helper.st --> main.st
     public void push(int x) {
         while(main.size()>0){
