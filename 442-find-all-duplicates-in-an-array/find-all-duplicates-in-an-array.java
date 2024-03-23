@@ -1,3 +1,6 @@
+// imp** create hashmap to store element with counts,list for return 
+// if element is in present in map then add to list
+// if not increment value of count in hashmap
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
