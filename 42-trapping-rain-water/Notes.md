@@ -1,1 +1,1 @@
-<h2>trapping-rain-water Notes</h2><hr>tricky qq
+<h2>trapping-rain-water Notes</h2><hr>[ Time taken: 8 m 26 s ]
