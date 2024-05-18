@@ -2,6 +2,7 @@ class Solution {
     public void rotate(int[] nums, int k) {
         int n=nums.length;
         k=k%n;
+        // k is within the bound of arr length
         reverse(nums,0,n-1);
         // 0 to n-1 arr
         reverse(nums,0,k-1);
