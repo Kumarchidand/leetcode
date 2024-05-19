@@ -1,4 +1,7 @@
-// imp**
+// imp** first take sum and maxi var then looping 
+// add each element in the array
+// find maximum bet sum and maxi value
+// again check if sum<0 ,assign sum = 0;
 class Solution {
     public int maxSubArray(int[] nums) {
         // int currsum=nums[0];
@@ -12,6 +15,7 @@ class Solution {
         //     max=Math.max(max,currsum);
         // }
         //   return max;
+
          int sum=0;
          int maxi=nums[0];
          for(int i=0;i<nums.length;i++){
