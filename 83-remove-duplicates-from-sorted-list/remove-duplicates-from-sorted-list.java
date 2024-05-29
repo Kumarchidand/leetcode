@@ -16,16 +16,16 @@ class Solution {
         ListNode ans=dummy;
       
         while(ptr!=null){
-         if(dummy.val!=ptr.val){
+         if(ans.val!=ptr.val){
           ListNode a=new ListNode(ptr.val);
-           dummy.next=a;
-           dummy=a;
+           ans.next=a;
+           ans=a;
          ptr=ptr.next;
         }
         else{
             ptr=ptr.next;
         }
     } 
-        return ans;
+        return dummy;
     }
 }
