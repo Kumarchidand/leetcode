@@ -10,19 +10,30 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        // Base case: if head is null or only one node, return head
-        if (head == null || head.next == null) {
-            return head;
+        // // Base case: if head is null or only one node, return head
+        // if (head == null || head.next == null) {
+        //     return head;
+        // }
+
+        // // Recursively reverse the rest of the list
+        // ListNode newHead = reverseList(head.next);
+
+        // // Reverse the current node's pointer
+        // head.next.next = head;
+        // head.next = null;
+
+        // // Return the new head of the reversed list
+        // return newHead;
+
+        ListNode curr=head;
+        ListNode prev=null;
+        ListNode after=null;
+        while(curr!=null){
+            after=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=after;
         }
-
-        // Recursively reverse the rest of the list
-        ListNode newHead = reverseList(head.next);
-
-        // Reverse the current node's pointer
-        head.next.next = head;
-        head.next = null;
-
-        // Return the new head of the reversed list
-        return newHead;
+        return prev;
     }
 }
