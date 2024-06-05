@@ -20,7 +20,7 @@ class Solution {
         // calc pse
         st.push(0); 
         pse[0]=-1;
-        for(int i=1;i<n;i++){
+        for(int i=1;i<=n-1;i++){
             while(st.size()>0 && heights[st.peek()]>=heights[i]){
                 st.pop();
             }
